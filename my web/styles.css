@@ -1,0 +1,683 @@
+ /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ECF0F1 ;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+    background-image: url('photos/headrphoto.jpg'); /* Add background image */
+    background-size: cover; /* Ensure the background image covers the header */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center; /* Center the background image */
+    color: #fff;
+    padding: 40px 0; /* Restaurant name */
+    position: fixed;
+    top: 0; /* Position the header at the top of the viewport */
+    width: 100%; /* Make the header span the entire width of the viewport */
+    z-index: 1000;
+}
+
+    header h1 
+    {
+      float: left;
+      font-size: 35px;
+    }
+
+    nav a.active {
+      /* Add your desired styles for the active navigation link */
+      font-weight: bold; /* For example, making the text bold */
+      color: #ff0000; /* For example, changing the text color to red */
+  }
+
+    nav ul {
+      float: right;
+      font-size: 15px;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-left: 25px;
+
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background-image: url('photos/homebackground.jpg'); /* Changed background image */
+      background-size: cover;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 300px 0;
+
+    }
+
+    .hero h2 {
+      font-size: 5em;
+      text-align: right;
+      color: #ffffff;
+    }
+
+    
+    .specials-section {
+    margin-bottom: 30px;
+    color: #000; /* Change text color to black */
+}
+
+.specials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.special-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.special-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+/*Zoom Image*/
+.special-item:hover {
+  transform: scale(1.1);
+} 
+
+h2 {
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Chef and Popular Dish styles */
+.chef-section,
+.popular-dishes-section {
+    color: #000; /* Change text color to black */
+}
+
+.chef-grid,
+.popular-dishes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.chef-item,
+.popular-dish-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.chef-item:hover {
+  transform: scale(1.1);
+}
+.chef-item img,
+.popular-dish-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+/*---------------------------------------------------------------------*/
+/* Footer styles */
+/* Footer Styles */
+.footer {
+    background-image: url('photos/footer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative; /* Add position relative to make the z-index work */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer::before {
+    content: ""; /* Create a pseudo-element */
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity here (0.5 means 50% opaque black) */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer .container {
+    position: relative; /* Add position relative */
+    z-index: 1; /* Add z-index to make sure the content is on top of the pseudo-element */
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.h1about {
+    color: #fff;
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 30px;
+    float: left;
+    margin: 40 auto;
+}
+
+.footer-heading {
+    float: center;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.quick-links li {
+    list-style-type: none;
+    margin-bottom: 10px;
+     
+}
+.quick-links li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.quick-links li a:hover {
+    color: #ccc;
+}
+.footer-bottom 
+{
+    background-color: #222;
+    text-align: center;
+    padding: 20px 10px; /* Adjust padding as needed */
+    position: relative;
+    z-index: 2; /* Ensure that the footer-bottom content is above the pseudo-element */
+    
+}
+
+
+/*--------------Register form------------------------------------------------*/
+
+.containerRegister {
+  max-width: 400px; /* Increase the width of the form container */
+  margin: 150px auto; /* Adjust margin-top to move the form down */
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  z-index: 1;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: black;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #cc0000;
+}
+
+
+/* CSS for image background */
+#image-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Adjust the height as needed */
+  z-index: -1; /* Ensure the image is behind other content */
+}
+
+/* CSS for the image element */
+#background-image {
+  width: 100%; /* Adjust the width as needed */
+  height: 100%; /* Adjust the height as needed */
+  object-fit: cover; /* Scale the image to cover the entire container */
+}
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Book Us section styles */
+    .container-bookus {
+      background-color: #0000; /* Light pink color */
+      padding: 50px 0;
+      text-align: center;
+      margin: 100px;
+
+    }
+
+    .border-box {
+      max-width: 600px; /* Set maximum width for the form */
+      margin: 0 auto; /* Center the form */
+      padding: 20px; /* Add padding inside the form */
+      border: 2px solid #B87333; /* Rectangle border */
+      border-radius: 10px; /* Adjust border radius for rounded corners */
+      background-color: #fff; /* Form background color */
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+
+    }
+
+    .bookus {
+      font-size: 18px;
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    .display {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    .form-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .form-label {
+      flex: 1;
+      font-weight: bold;
+      margin-bottom: 5px; /* Add some bottom margin to separate labels */
+    }
+
+   .form-select,
+    .contactNo,
+    .Date,
+    .submitbtn {
+      flex: 2;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .submitbtn {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .submitbtn:hover {
+      background-color: #0056b3;
+    }
+
+/* contact us ----------------------------------------------------------------------*/
+/* Contact Form Styles */
+.wrapper {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 100px;
+}
+
+.contact-wrap h3 {
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+.btn-primary {
+  background-color: #ffc107;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #ffae42;
+}
+
+
+/* Menu page specific styles */
+.menu-section {
+  margin-bottom: 30px;
+  color: #000; /* Change text color to black */
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  gap: 20px;
+}
+
+.menu-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu-item img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.menu-section {
+  margin-top: 100px; /* Add some space between the header and the menu section */
+  margin-bottom: 30px;
+  color: #000; /* Change text color to black */
+}
+.menu-section h2
+{
+  font-size: 45px;
+  font-family: ariyal;
+  margin-top: 150px;
+}
+.image-container:hover {
+  transform: scale(1.1);
+}
+
+
+/* about page specific styles */
+
+.about-section {
+    padding: 150px 0;
+  background-image: url('photos/aboutbackground.jpg'); /* Add background image */
+  background-size: cover;
+  font-family: Arial, sans-serif; /* Set default font family */
+
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-section h1 {
+  font-size: 36px; /* Increase font size for h1 */
+  font-weight: bold;
+  color: #fff; /* White text color */
+  text-align: center;
+  margin-bottom: 30px; /* Add margin below h1 */
+}
+
+.about-section h2 {
+  font-size: 24px; /* Increase font size for h2 */
+  font-weight: bold;
+  color: #333; /* Dark text color */
+}
+
+
+/* Your existing CSS styles */
+/* Add your additional CSS styles for the new layout below */
+
+/* Additional CSS styles for the new layout */
+.MostPopulers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.MostPopulerstexts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-containers {
+  width: 50%;
+  padding-right: 180px; /* Adjust spacing between image and text */
+  margin-top: 70px; 
+
+}
+
+.about-images {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-images:hover {
+  transform: scale(1.1);
+}
+
+.text-containers {
+  max-width: 50%;
+  margin-top: 40px;
+}
+
+.text-containers h2 {
+  font-size: 24px;
+  color: black;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.text-containers p {
+  font-size: 18px; /* Adjust font size */
+  line-height: 1.5;
+  text-align: left;
+}
+
+
+
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Increase the gap between images */
+  justify-content: center; /* Align images to the center */
+}
+
+.single_gallery {
+  position: relative;
+  flex: 0 0 calc(33.33% - 20px); /* Set initial width of images */
+  overflow: hidden; /* Hide overflow to prevent white corner from showing */
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  border: 2px solid #fff; /* Add white border around images */
+}
+
+.gallery img:hover {
+  transform: scale(1.2); /* Increase the scale on hover */
+}
+
+.popup-image {
+  position: absolute;
+  top: -30px; /* Position the name above the image */
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background for text */
+  color: #fff; /* White text */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.single_gallery:hover .popup-image {
+  display: block;
+}
+
+
+/* Login Page password Icon And error massage */
+.password-container {
+      position: relative;
+    }
+    #password {
+      padding-right: 35px; /* Adjust the padding to accommodate the icon */
+    }
+    #togglePassword {
+      position: absolute;
+      right: 10px; /* Adjust the distance from the right */
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+ .error-message {
+      color: red;
+      text-align: center;
+      margin-top: 20px; /* Adjust the margin as needed */
+    }
+    /*--------------------------------------------------------------------------------------------*/
+
+
+    /* Custom CSS to adjust image sizes */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px 
+  padding: 10px;
+ 
+}
+
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* CSS for drink gallery */
+  .drink_area
+  {
+    margin-top: 100px;
+    background-image: url('photos/drinkbackground.jpg'); /* Add background image */
+    background-size: cover;
+  }
+  .drink_area h2
+  {
+font-size: 75px;
+  }
+.drink-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.drink-item {
+  width: calc(33.33% - 20px); /* Adjust the width as needed */
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.drink-item img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.drink-item h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.drink-item p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #888;
+}
+.drink-item:hover {
+  transform: scale(1.1);
+}
+
+/* Other styles as needed */
+
+
